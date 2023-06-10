@@ -82,7 +82,7 @@ a:active {
 }
 
 body {
-	background-image: url(background-img.jpg);
+	background-image: url(background-img.webp);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat
