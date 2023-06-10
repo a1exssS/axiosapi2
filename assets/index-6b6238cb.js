@@ -1239,11 +1239,11 @@ async function Hs() {
 		t = await (await Ns.request(e)).data.data
 	let n = '',
 		s = 6
-	for (let i = 0; i < 6; i++)
-		(n = `
+	for (let i = 0; i < 6; i++);
+	;(n = `
 
 			<div class="topics__item">
-				<a href="${t[i].url}" class="topics__video-link">
+				<a aria-label="link to open the site" href="${t[i].url}" class="topics__video-link">
 					<img loading="lazy" src="${t[i].images.jpg.image_url}" alt="" class="topics__video-image">
 				</a>
 				<span class="topics__video-subtitle">
@@ -1252,7 +1252,7 @@ async function Hs() {
 				<span class="topics__video-title">
 					${t[i].title}
 				</span>
-				<a href="${t[i].url}" class="topics__play-link">
+				<a aria-label="link to open the site" href="${t[i].url}" class="topics__play-link">
 					Play
 					<svg class="topics__item-image">
 						<use xlink:href="./assets/sprite.svg#play-btn" />
@@ -1260,7 +1260,7 @@ async function Hs() {
 				</a>
 			</div>
 				`),
-			document.querySelector('.topics__box').insertAdjacentHTML('beforeend', n)
+		document.querySelector('.topics__box').insertAdjacentHTML('beforeend', n)
 	document.querySelector('.topics__button').addEventListener('click', () => {
 		s += 6
 		for (let i = s - 6; i < s; i++) {

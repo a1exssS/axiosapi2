@@ -584,6 +584,7 @@ body {
 .about__image {
 	object-fit: cover;
 	width: 100%;
+	aspect-ratio: auto 640 / 360;
 	height: auto
 }
 
