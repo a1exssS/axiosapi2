@@ -18,7 +18,7 @@ export default async function axiosAPI() {
 
 			<div class="topics__item">
 				<a href="${response[i].url}" class="topics__video-link">
-					<img src="${response[i].images.jpg.image_url}" alt="" class="topics__video-image">
+					<img loading="lazy" src="${response[i].images.jpg.image_url}" alt="" class="topics__video-image">
 				</a>
 				<span class="topics__video-subtitle">
 					${response[i].status}
@@ -50,7 +50,7 @@ export default async function axiosAPI() {
 
 				<div class="topics__item">
 					<a href="${response[i].url}" class="topics__video-link">
-						<img src="${response[i].images.jpg.image_url}" alt="" class="topics__video-image">
+						<img loading="lazy" src="${response[i].images.jpg.image_url}" alt="" class="topics__video-image">
 					</a>
 					<span class="topics__video-subtitle">
 						${response[i].status}

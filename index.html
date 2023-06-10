@@ -21,10 +21,13 @@
 	<header class="header">
 		<div class="container header__container">
 			<a href="#" class="header__logo-link">
-				<img src="assets/images/logoimg.png" alt="" class="header__logo-image">
+				<!-- <picture>
+					<source loading="lazy" data-src="assets/images/logoimg.webp"> -->
+				<img loading="lazy" data-src="assets/images/logoimg.png" class="header__logo-image" alt="">
+				<!-- </picture> -->
 				CRYPTOGOAT
 			</a>
-			<nav class="header__navigation navigation">
+			<nav data-menu="close" class="header__navigation navigation">
 				<a href="" class="navigation__link">Home</a>
 				<a href="" class="navigation__link">About Us</a>
 				<a href="" class="navigation__link">Speakers</a>
@@ -38,6 +41,11 @@
 					Register Now
 				</a>
 			</nav>
+			<button data-menu-open data-menu-close class="navigation__button">
+				<svg class="navigation__image-icon">
+					<use xlink:href="/assets/images/sprite.svg#menu" />
+				</svg>
+			</button>
 		</div>
 	</header>
 
@@ -60,24 +68,33 @@
 		<section class="about">
 			<div class="container about__container">
 				<div class="about__box">
-					<h2 class="about__title">About Event</h2>
-					<p class="about__text">
-						CryptoGOAT is the blockchain conference network bringing together the key players of crypto industry
-						and experts
-						to redefine the future of finance. The edition of the CryptoGOAT will take place during on June 1,
-						2023 in Dubai,
-						with the world’s top crypto companies and blockchain entrepreneurs. Today, UAE, specifically Dubai is
-						gearing up
-						to become a global crypto hub. Thus, CryptoGOAT will be the gathering in the region on behalf of the
-						world of
-						blockchain and cryptocurrency, with a wide range of topics focused on the financial technologies of
-						the future,
-						extensive networking opportunities and participation from more than 40 countries.
-					</p>
+					<div class="about__box-item">
+
+						<h2 class="about__title">About Event</h2>
+						<p class="about__text">
+							CryptoGOAT is the blockchain conference network bringing together the key players of crypto
+							industry
+							and experts
+							to redefine the future of finance. The edition of the CryptoGOAT will take place during on June 1,
+							2023 in Dubai,
+							with the world’s top crypto companies and blockchain entrepreneurs. Today, UAE, specifically Dubai
+							is
+							gearing up
+							to become a global crypto hub. Thus, CryptoGOAT will be the gathering in the region on behalf of
+							the
+							world of
+							blockchain and cryptocurrency, with a wide range of topics focused on the financial technologies of
+							the future,
+							extensive networking opportunities and participation from more than 40 countries.
+						</p>
+					</div>
 					<a href="" class="about__link">Become Sponser</a>
 				</div>
 				<div class="about__box">
-					<img src="./assets/images/about__side-img.png" class="about__image" alt="">
+					<picture>
+						<source loading="lazy" data-src="assets/images/about__side-img.webp">
+						<img loading="lazy" data-src="assets/images/about__side-img.png" class="about__image" alt="">
+					</picture>
 				</div>
 			</div>
 		</section>
@@ -147,43 +164,81 @@
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-1.png" class="sponsors__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-1.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-1.png" class="sponsors__image"
+											alt="">
+									</picture>
 								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-2.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-2.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-2.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-3.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-3.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-3.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-4.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-4.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-4.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-1.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-1.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-1.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-2.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-2.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-2.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
 
-									<img src="assets/images/sponsors-3.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-3.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-3.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="swiper-slide sponsors__swiper-slide">
 								<div class="sponsors__item">
-
-									<img src="assets/images/sponsors-4.png" class="sponsors__image" alt=""></div>
+									<picture>
+										<source loading="lazy" data-src="assets/images/sponsors-4.webp">
+										<img loading="lazy" data-src="assets/images/sponsors-4.png" class="sponsors__image"
+											alt="">
+									</picture>
+								</div>
 							</div>
 						</div>
 						<div class="swiper-pagination sponsors__swiper-pagination"></div>
@@ -204,7 +259,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-1.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-1.webp">
+										<img loading="lazy" data-src="assets/images/face-1.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Nicole Purin</span>
 									<span class="employees__subname">OKX</span>
 								</div>
@@ -212,7 +270,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-2.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-2.webp">
+										<img loading="lazy" data-src="assets/images/face-2.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Jason Allegrante</span>
 									<span class="employees__subname">Fireblocks</span>
 								</div>
@@ -220,7 +281,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-3.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-3.webp">
+										<img loading="lazy" data-src="assets/images/face-3.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Sunny Lu</span>
 									<span class="employees__subname">Vechain</span>
 								</div>
@@ -228,14 +292,20 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-4.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-4.webp">
+										<img loading="lazy" data-src="assets/images/face-4.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Helen Hai</span>
 									<span class="employees__subname">Binance</span>
 								</div>
 							</div>
 							<div class="swiper-slide employees__swiper-slide">
 								<div class="employees__swiper-item">
-									<img src="assets/images/face-5.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-5.webp">
+										<img loading="lazy" data-src="assets/images/face-5.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Alex Zinder</span>
 									<span class="employees__subname">Ledger Enterprise</span>
 								</div>
@@ -243,7 +313,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-6.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-6.webp">
+										<img loading="lazy" data-src="assets/images/face-6.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Gracy Chen</span>
 									<span class="employees__subname">Bitget</span>
 								</div>
@@ -251,14 +324,20 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-7.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-7.webp">
+										<img loading="lazy" data-src="assets/images/face-7.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Mohammed Alblooshi</span>
 									<span class="employees__subname">Dubai International Financial Centre Authority</span>
 								</div>
 							</div>
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
-									<img src="assets/images/face-8.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-8.webp">
+										<img loading="lazy" data-src="assets/images/face-8.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Max Kordek</span>
 									<span class="employees__subname">Lisk</span>
 								</div>
@@ -266,7 +345,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-5.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-5.webp">
+										<img loading="lazy" data-src="assets/images/face-5.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Nicole Purin</span>
 									<span class="employees__subname">OKX</span>
 								</div>
@@ -274,7 +356,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-6.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-6.webp">
+										<img loading="lazy" data-src="assets/images/face-6.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Jason Allegrante</span>
 									<span class="employees__subname">Fireblocks</span>
 								</div>
@@ -282,22 +367,30 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-7.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-7.webp">
+										<img loading="lazy" data-src="assets/images/face-7.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Sunny Lu</span>
 									<span class="employees__subname">Vechain</span>
 								</div>
 							</div>
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
-
-									<img src="assets/images/face-8.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-8.webp">
+										<img loading="lazy" data-src="assets/images/face-8.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Helen Hai</span>
 									<span class="employees__subname">Binance</span>
 								</div>
 							</div>
 							<div class="swiper-slide employees__swiper-slide">
 								<div class="employees__swiper-item">
-									<img src="assets/images/face-1.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-1.webp">
+										<img loading="lazy" data-src="assets/images/face-1.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Alex Zinder</span>
 									<span class="employees__subname">Ledger Enterprise</span>
 								</div>
@@ -305,7 +398,10 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-2.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-2.webp">
+										<img loading="lazy" data-src="assets/images/face-2.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Gracy Chen</span>
 									<span class="employees__subname">Bitget</span>
 								</div>
@@ -313,14 +409,20 @@
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
 
-									<img src="assets/images/face-3.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-3.webp">
+										<img loading="lazy" data-src="assets/images/face-3.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Mohammed Alblooshi</span>
 									<span class="employees__subname">Dubai International Financial Centre Authority</span>
 								</div>
 							</div>
 							<div class="swiper-slide employees__swiper-slide ">
 								<div class="employees__swiper-item">
-									<img src="assets/images/face-4.png" class="employees__image" alt="">
+									<picture>
+										<source loading="lazy" data-src="assets/images/face-4.webp">
+										<img loading="lazy" data-src="assets/images/face-4.png" class="employees__image" alt="">
+									</picture>
 									<span class="employees__name">Max Kordek</span>
 									<span class="employees__subname">Lisk</span>
 								</div>
@@ -347,7 +449,10 @@
 		<div class="footer__container container">
 			<div class="footer__box">
 				<a href="#" class="footer__logo-link">
-					<img src="assets/images/logoimg.png" alt="" class="footer__logo-image">
+					<picture>
+						<source loading="lazy" data-src="assets/images/logoimg.webp">
+						<img loading="lazy" data-src="assets/images/logoimg.png" class="footer__logo-image" alt="">
+					</picture>
 					CRYPTOGOAT
 				</a>
 				<nav class="footer__navigation">
